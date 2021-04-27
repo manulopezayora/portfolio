@@ -1,1 +1,19 @@
-<p>navbar works!</p>
+<nav class="menu">
+  <h1 class="logo" routerLink="">ML</h1>
+  <div class="menu__icon" (click)="showMenu()">
+    <div class="bar"></div>
+    <div class="bar"></div>
+    <div class="bar"></div>
+  </div>
+  <ul class="menu__list" [ngClass]="{'menu__list--active': isShown}">
+    <li class="menu__list-item">
+      <a routerLink="/works" class="menu__list-item-link">Works</a>
+    </li>
+    <li class="menu__list-item">
+      <a routerLink="/about" class="menu__list-item-link">About</a>
+    </li>
+    <li class="menu__list-item">
+      <a routerLink="/contact" class="menu__list-item-link">Contact</a>
+    </li>
+  </ul>
+</nav>
