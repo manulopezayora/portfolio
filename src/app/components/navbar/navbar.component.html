@@ -7,13 +7,13 @@
   </div>
   <ul class="menu__list" [ngClass]="{'menu__list--active': isShown}">
     <li class="menu__list-item">
-      <a routerLink="/works" class="menu__list-item-link" (click)="showMenu()">Works</a>
+      <a routerLink="/works" routerLinkActive="link-active" class="menu__list-item-link" (click)="showMenu()">Works</a>
     </li>
     <li class="menu__list-item">
-      <a routerLink="/about" class="menu__list-item-link" (click)="showMenu()">About</a>
+      <a routerLink="/about" routerLinkActive="link-active" class="menu__list-item-link" (click)="showMenu()">About</a>
     </li>
     <li class="menu__list-item">
-      <a routerLink="/contact" class="menu__list-item-link" (click)="showMenu()">Contact</a>
+      <a routerLink="/contact" routerLinkActive="link-active" class="menu__list-item-link" (click)="showMenu()">Contact</a>
     </li>
   </ul>
 </nav>
