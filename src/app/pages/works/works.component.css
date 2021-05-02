@@ -1,0 +1,68 @@
+.container {
+  height: calc(100vh - 90px);
+  width: 100%;
+  display: grid;
+  place-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+
+.card {
+  margin-top: 80px;
+  height: fit-content;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 150px 1fr 100px;
+  /* box-shadow: 0px 0px 5px 1px rgb(0 0 0 / 75%);
+  border-radius: 30px; */
+  overflow: hidden;
+}
+
+.card__image {
+  width: 100%;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.card__info {
+  line-height: 1.5;
+  padding: 25px;
+}
+
+.card__buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card__button {
+  padding: 15px 10px;
+  font-size: 1rem;
+  background-color: #fff;
+  border: 2px solid #000;
+  cursor: pointer;
+}
+
+.vanila {
+  color: #f9a825;
+}
+
+.react {
+  color: #2c80ec;
+}
+
+.vue {
+  color: #42b883;
+}
+
+.svelte {
+  color: #ff3e00;
+}
+
+.angular {
+  color: #dd0031;
+}
