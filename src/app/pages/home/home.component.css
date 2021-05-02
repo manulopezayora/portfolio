@@ -1,0 +1,48 @@
+.home {
+  width: 100%;
+  height: calc(100vh - 90px);
+  color: #fff;
+  background: linear-gradient(-45deg, #6cee52, #4d3ce7, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  animation: change 10s ease-in-out infinite;
+}
+
+.title {
+  font-size: .8rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border: 3px solid #fff;
+  padding: .5rem 1rem;
+}
+
+.title__text-color {
+  color: rgb(255, 251, 0);
+}
+
+@keyframes change {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
+
+
+@media screen and (min-width: 768px) {
+
+  .title {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    border: 5px solid #fff;
+    padding: 1rem 5rem;
+  }
+
+}
