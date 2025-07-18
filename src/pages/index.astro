@@ -19,7 +19,7 @@ import Layout from '../layouts/Layout.astro';
 	description='Experto en Frontend con Angular y React'
 >
 	<main>
-		<SectionContainer id="about" class="pt-44 relative h-[100dvh] overflow-hidden">
+		<SectionContainer id="about" class="pt-44 pb-44">
 			<img
 				class="rounded-full size-12 mb-4"
 				src="/portfolio/images/author.jpg"
@@ -65,12 +65,3 @@ import Layout from '../layouts/Layout.astro';
 		</SectionContainer>
 	</main>
 </Layout>
-
-<script>
-	const bg = document.getElementById('about');
-
-	window.addEventListener('scroll', () => {
-		const offset = window.scrollY * 0.3;
-		bg!.style.transform = `translateY(${offset}px)`;
-	});
-</script>
