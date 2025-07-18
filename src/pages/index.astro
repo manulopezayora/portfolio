@@ -3,6 +3,7 @@ import Experience from '../components/Experience.astro';
 import LinkButton from '../components/LinkButton.astro';
 import Projects from '../components/Projects.astro';
 import SectionContainer from '../components/SectionContainer.astro';
+import TitleSection from '../components/TitleSection.astro';
 import BriefcaseIcon from '../icons/Briefcase.astro';
 import CodeIcon from '../icons/Code.astro';
 import EmailIcon from '../icons/Email.astro';
@@ -44,20 +45,16 @@ import Layout from '../layouts/Layout.astro';
 		</SectionContainer>
 
 		<SectionContainer id="experience">
-			<h2 class="text-3xl font-semibold flex gap-x-2 items-center">
+			<TitleSection title="Experiencia">
 				<BriefcaseIcon class="size-7" />
-				Experiencia
-			</h2>
-			<div class="border border-solid mt-2 mb-6"></div>
+			</TitleSection>
 			<Experience />
 		</SectionContainer>
 
 		<SectionContainer id="projects">
-			<h2 class="text-3xl font-semibold flex gap-x-2 items-center">
+			<TitleSection title="Proyectos">
 				<CodeIcon class="size-7" />
-				Proyectos
-			</h2>
-			<div class="border border-solid mt-2 mb-6"></div>
+			</TitleSection>
 			<Projects />
 		</SectionContainer>
 	</main>
