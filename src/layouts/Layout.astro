@@ -20,6 +20,17 @@ const { title, description } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={ Astro.generator } />
+		<!-- Schema.org markup for Google+ -->
+		<meta itemprop='name' content={ title }>
+		<meta itemprop='description' content={ description }>
+		<meta itemprop='image' content='https://manulopezayora.github.io/portfolio/images/portfolio.webp'>
+		<!-- Open Graph data -->
+		<meta property='og:title' content={ title } />
+		<meta property='og:type' content='article' />
+		<meta property='og:url' content='https://manulopezayora.github.io/portfolio/' />
+		<meta property='og:image' content='https://manulopezayora.github.io/portfolio/images/portfolio.webp' />
+		<meta property='og:description' content={ description } />
+		<meta property='og:site_name' content={ title } />
 		<title>{ title }</title>
 	</head>
 	<body class="bg-neutral-950">
